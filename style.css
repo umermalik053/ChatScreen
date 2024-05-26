@@ -1,0 +1,155 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 60%;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(39, 30, 172);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head1 {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  position: sticky;
+}
+
+#less-than {
+  padding-left: 5px;
+  font-size: 30px;
+  color: rgb(231, 231, 231);
+}
+#user-logo {
+  padding-left: 20px;
+  font-size: 30px;
+  color: rgb(231, 231, 231);
+  /* color: blue; */
+}
+.user-name {
+  padding-left: 10px;
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: rgb(231, 231, 231);
+  /* color: blue; */
+}
+
+.head2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.icon {
+  font-size: 25px;
+  color: rgb(231, 231, 231);
+}
+.message-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(177, 177, 177);
+
+  /* position: fixed;
+    bottom: 0; */
+}
+
+.message-center {
+  background-color: whitesmoke;
+  width: 85%;
+  height: 40px;
+  border-radius: 50px 50px;
+  /* border: none;
+  outline: none; */
+  display: flex;
+  justify-content: space-between;
+}
+#message {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  padding-left: 30px;
+  border-radius: 50px 0px 0px 50px;
+}
+.message-icon {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.link-message {
+  font-size: 25px;
+  color: rgb(177, 177, 177);
+}
+#send {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(39, 30, 172);
+  border: none;
+  outline: none;
+}
+.plane {
+  font-size: 20px;
+  color: rgb(231, 231, 231);
+}
+.messagelist {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px;
+  list-style-type: none;
+  background-color: aliceblue; 
+  
+}
+
+
+
+li {
+  width: 45%; 
+  padding: 15px; 
+  margin: 5px 10px;
+ 
+}
+
+.bot {
+    text-align: left;
+    margin-left: 0;
+    background-color: rgb(39, 30, 172); 
+    border-radius: 15px 15px 15px 0px;
+    color: whitesmoke;
+}
+
+.user-message {
+    text-align: left;
+  margin-left: auto;
+  margin-right: 0;
+    background-color: rgb(177, 177, 177); 
+    border-radius: 15px 15px 0px 15px;
+}

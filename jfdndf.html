@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating Message Alignment</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.messages {
+    list-style-type: none;  /* Remove default list styling */
+    padding: 0;             /* Remove default padding */
+    margin: 0;              /* Remove default margin */
+}
+
+.message {
+    width: 50%;             /* Set message width to 50% */
+    padding: 10px;          /* Add some padding */
+    margin-bottom: 5px;     /* Add some space between messages */
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 5px;     /* Rounded corners */
+}
+
+/* Align messages to the left */
+.message.left {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Align messages to the right */
+.message.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+    </style>
+<body>
+    <ul class="messages">
+        <li class="message left">This is the first message, aligned left.</li>
+        <li class="message right">This is the second message, aligned right.</li>
+        <li class="message left">This is the third message, aligned left.</li>
+        <li class="message right">This is the fourth message, aligned right.</li>
+    </ul>
+</body>
+</html>
