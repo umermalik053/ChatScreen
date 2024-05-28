@@ -1,17 +1,19 @@
-
-
 let messages = document.getElementsByClassName("messagelist")[0];
 let input = document.getElementById("message");
 let button = document.getElementById("send");
 
-
 let userPrompt = prompt("Enter Your Name");
 document.getElementById("userName").innerHTML = userPrompt;
 
+function clickOnEnter(event) {
+  if (event.key === "Enter") {
+    sendmessage();
+  }
+}
 
-
-
-
+function autoScroll() {
+  messages.scrollTop = messages.scrollHeight;
+}
 
 // const previousmessage = [
 //   {
@@ -36,16 +38,25 @@ document.getElementById("userName").innerHTML = userPrompt;
 //   messages.innerHTML += `<li class=${previousmessage[i].key}>${previousmessage[i].text}</li>`;
 // }
 
+
 function sendmessage() {
+  if (input.value.trim() === "") {
+    return; // Do nothing if input is empty
+  }
+  const userInput = input.value; 
   messages.innerHTML += `<li class="user-message">${input.value}</li>`;
-  setTimeout(reply(), 1000);
+  autoScroll();
+  setTimeout(() => {
+    reply(userInput);
+    autoScroll();
+  }, 1000);
   input.value = "";
 }
 
-button.addEventListener("click", sendmessage);
+button.addEventListener("click", sendmessage());
 
-function reply() {
-  var user = input.value;
+function reply(userInput) {
+  var user = userInput;
   user = user.toLowerCase();
   user = user.replace(/\s+/g, "");
   console.log(user);

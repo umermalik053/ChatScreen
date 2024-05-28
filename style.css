@@ -19,7 +19,7 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
 }
 .header {
   width: 100%;
@@ -125,31 +125,87 @@ body {
   overflow: auto;
   padding: 10px;
   list-style-type: none;
-  background-color: aliceblue; 
-  
+  background-color: aliceblue;
+  scroll-behavior: smooth;
 }
 
-
-
 li {
-  width: 45%; 
-  padding: 15px; 
+  width: 45%;
+  padding: 15px;
   margin: 5px 10px;
- 
 }
 
 .bot {
-    text-align: left;
-    margin-left: 0;
-    background-color: rgb(39, 30, 172); 
-    border-radius: 15px 15px 15px 0px;
-    color: whitesmoke;
+  text-align: left;
+  margin-left: 0;
+  background-color: rgb(39, 30, 172);
+  border-radius: 15px 15px 15px 0px;
+  color: whitesmoke;
 }
 
 .user-message {
-    text-align: left;
+  text-align: left;
   margin-left: auto;
   margin-right: 0;
-    background-color: rgb(177, 177, 177); 
-    border-radius: 15px 15px 0px 15px;
+  background-color: rgb(177, 177, 177);
+  border-radius: 15px 15px 0px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    border: none;
+  }
+  .link-message {
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .message-icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .link-message {
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+  }
+
+  .header {
+    
+    height: 40px;
+    
+    
+  }
+  .head1 {
+  
+   
+    width: 60%;
+   
+  }
+
+  #less-than {
+    font-size: 20px;
+   
+  }
+  #user-logo {
+
+    font-size: 20px;
+    
+  }
+  .user-name {
+    font-size: 15px;
+  }
+
+  .head2 {
+    
+    width: 40%;
+  }
+
+  .icon {
+    font-size: 20px;
+    color: rgb(231, 231, 231);
+  }
 }
