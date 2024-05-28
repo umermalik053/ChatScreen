@@ -49,7 +49,7 @@ function sendmessage() {
   setTimeout(() => {
     reply(userInput);
     autoScroll();
-  }, 1000);
+  }, 500);
   input.value = "";
 }
 
