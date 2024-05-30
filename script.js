@@ -53,7 +53,7 @@ function sendmessage() {
   input.value = "";
 }
 
-button.addEventListener("click", sendmessage());
+button.addEventListener("click", sendmessage);
 
 function reply(userInput) {
   var user = userInput;
